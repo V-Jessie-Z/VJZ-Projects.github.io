@@ -1,0 +1,28 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>Help Modal</ion-title>
+  </ion-toolbar>
+  <ion-buttons slot="end">
+    <ion-button (click)="closeModal()">
+      <ion-icon slot="icon-only" name="close"></ion-icon>
+    </ion-button>
+  </ion-buttons>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-header collapse="condense">
+    <ion-toolbar>
+      <ion-title size="large">Help Modal</ion-title>
+    </ion-toolbar>
+  </ion-header>
+  <ion-card>
+    <ion-card-header>
+      <ion-card-title>Get Help</ion-card-title>
+    </ion-card-header>
+    
+    <ion-card-content>
+      <p>Thank you for contacting us. We understand there may be a problem. We’re looking into it right now, and we’ll get back to you as soon as we find out what’s going on.</p>
+      
+    </ion-card-content>
+  </ion-card>
+</ion-content>

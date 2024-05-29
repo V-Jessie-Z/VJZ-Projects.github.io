@@ -1,0 +1,66 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>Account</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-header collapse="condense">
+    <ion-toolbar>
+      <ion-title size="large">Account</ion-title>
+    </ion-toolbar>
+  </ion-header>
+   
+
+  <ion-content>
+
+    <!-- Display user details -->
+   <div>
+    <h4>User Details     
+    </h4>
+   </div>
+    <ion-item>
+      <ion-label>Name:</ion-label>
+      <ion-input [(ngModel)]="userDetails.name" type="text"></ion-input>
+      <ion-button slot="end" 
+      (click)="editUserDetails()" fill="clear">Edit</ion-button>
+      <ion-button (click)="openHelpModal()"  style="float: right;">
+        <ion-icon slot="icon-only" name="help-circle-outline"></ion-icon>
+      </ion-button>
+    </ion-item>
+    <ion-item>
+      <ion-label>Email:</ion-label>
+      <ion-input [(ngModel)]="userDetails.email" type="email"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label>Phone:</ion-label>
+      <ion-input [(ngModel)]="userDetails.phone" type="tel"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label>Address:</ion-label>
+      <ion-textarea [(ngModel)]="userDetails.address"></ion-textarea>
+    </ion-item>
+    <br>
+    <br>
+
+   <!-- Display manage addresses -->
+
+  <ion-item>
+    <ion-icon name="home-outline"></ion-icon>
+    &nbsp;
+    <ion-label>Manage Addresses </ion-label>
+    <ion-icon name="chevron-forward" slot="end"></ion-icon>
+  </ion-item>
+  
+     <!-- Display past orders -->
+    <br>
+    <h4>Past Orders</h4>
+    <ion-list>
+      <ion-item *ngFor="let order of pastOrders">
+        <ion-label>{{ order.dish }}</ion-label>
+        <ion-label slot="end">R{{ order.price }}</ion-label>
+        <ion-label slot="end">University of Pretoria</ion-label>
+        <ion-button (click)="reorder(order)" fill="clear" slot="end">Reorder</ion-button>
+      </ion-item>
+    </ion-list>
+</ion-content>

@@ -1,0 +1,53 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title mode="md"> 
+      <!-- md=material design -->
+     <span>Home</span> 
+     <ion-icon name="chevron-down-outline"></ion-icon>
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <div class="borderBottom">
+
+  <!-- Display slider pictures-->
+  <swiper-container [modules]="swiperModules"
+  [slidesPerView]="1.2"
+  [CenteredSlides]="true"
+  [autoplay]="true"
+  [pagination]="{clickable:true, dynamicBullets: true}"
+  [spaceBetween]="50">
+    
+    <swiper-slide>
+      <img src="assets/jollof1.jpeg"></swiper-slide>
+    <swiper-slide>
+      <img src="assets/Shisayanma.jpg">
+    </swiper-slide>
+    <swiper-slide>
+      <img src="assets/Briyani.jpeg">
+    </swiper-slide>
+    
+  </swiper-container>
+</div>
+
+<!-- Display restaurants -->
+<ion-list>
+<ion-item lines="none" *ngFor="let restaurant of restaurants" (click)="addToCart(restaurant)">
+  <ion-thumbnail slot="start">
+    <img [src]="restaurant.image" />
+  </ion-thumbnail>
+  <ion-label>
+    <h4>{{ restaurant.name }}</h4>
+    <ion-text color="medium">
+      <p class="pStyle">{{ restaurant.type }}</p>
+    </ion-text>
+    <span>{{ restaurant.rating }} <ion-icon name="star"></ion-icon>.</span>
+    {{ restaurant.deliveryTime }} mins. {{ restaurant.price }} for two
+    <ion-text color="tertiary">
+      <p class="distance">{{ restaurant.distance }} kms away</p>
+    </ion-text>
+  </ion-label>
+</ion-item>
+</ion-list>
+</ion-content>
