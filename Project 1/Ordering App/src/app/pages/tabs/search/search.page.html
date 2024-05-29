@@ -1,0 +1,28 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>Search</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-header collapse="condense">
+    <ion-toolbar>
+      <ion-title size="large">Search</ion-title>
+    </ion-toolbar>
+  </ion-header>
+  <!-- Display searchbar -->
+  <ion-searchbar [(ngModel)]="searchQuery" (ionChange)="searchRestaurant()"></ion-searchbar>
+  <ion-list>
+    <!-- Display searched restaurants -->
+    <ion-item *ngFor="let restaurant of filteredRestaurants" (click)="addToCart(restaurant)">
+      <ion-thumbnail slot="start" >
+        <img [src]="restaurant.image" />
+      </ion-thumbnail>
+      <ion-label>
+        <h2>{{ restaurant.name }}</h2>
+        <p>{{ restaurant.type }}</p>
+        <p>Rating: {{ restaurant.rating }}</p>
+      </ion-label>
+    </ion-item>
+  </ion-list>
+</ion-content>
