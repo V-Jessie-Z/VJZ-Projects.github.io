@@ -161,18 +161,20 @@ nav {
   margin: 0.5rem;
 }
 
+
 .btn-color-1 {
-  background-color: #007bff;
+  background-color: #6b4b35;
   color: #fff;
 }
 
+
 .btn-color-2 {
-  background-color: #28a745;
+  background-color: #244a2d;
   color: #fff;
 }
 
 .btn-color-3 {
-  background-color: #ffc107;
+  background-color: #a77444;
   color: #333;
 }
 
@@ -274,7 +276,7 @@ nav {
 }
 
 .project-img {
-  width: 100%;
+  width: 20%;
   border-radius: 5px;
   margin-bottom: 1rem;
 }
