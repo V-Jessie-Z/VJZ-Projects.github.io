@@ -1,5 +1,5 @@
 /* GENERAL */
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
 
 * {
   margin: 0;
@@ -8,8 +8,8 @@
 }
 
 body {
-  font-family: "Poppins", sans-serif;
-  background-color: #f5f5f5; /* Light gray background */
+  font-family: "Playfair Display", serif;
+  background-color: #9b6f49; /* Light gray background */
   color: #333; /* Dark gray text color */
 }
 
@@ -138,7 +138,7 @@ section {
   margin: 0 10rem;
   box-sizing: border-box;
   min-height: fit-content;
-  background-color: #fff; /* White background for sections */
+  background-color: #ffffffdc; /* White background for sections */
   border-radius: 10px; /* Rounded corners */
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow for sections */
   padding: 2rem;
@@ -241,6 +241,10 @@ section {
 .btn-color-2 {
   background: none;
 }
+
+.btn-color-3 {
+    background-color: #6c757d;
+  }
 
 .btn-color-2:hover {
   border: #fff 0.1rem solid; /* White border on hover */
