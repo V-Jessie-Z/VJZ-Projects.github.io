@@ -291,20 +291,20 @@ nav {
   display: inline-block;
   padding: 0.5rem 1rem;
   border-radius: 5px;
-  background-color: #007bff;
+  background-color: #6b4b35;
   color: #fff;
   text-decoration: none;
 }
 
 .project-btn:hover {
-  background-color: #0056b3;
+  opacity: 0.9;
 }
 
 /* CONTACT SECTION */
 .contact-info-upper-container {
   display: flex;
   flex-direction: column;
-  align-items: center;
+ justify-content:space-evenly;
 }
 
 .contact-info-container {
