@@ -151,7 +151,7 @@ p {
 
 .project-container {
   display: grid;
-  gap: 20px;
+
   padding: 20px;
   
 }
@@ -166,7 +166,7 @@ p {
   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
   transition: transform 0.3s ease, background 0.3s ease;
   position: relative;
-  justify-content: space-between;
+
 }
 
 .project-item a {
