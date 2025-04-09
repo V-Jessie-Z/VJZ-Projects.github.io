@@ -148,13 +148,12 @@ p {
   background: rgba(0, 0, 0, 0.8);
 }
 
-.project-container {
-  padding: 20px;
-}
+
 
 .project-items {
   display:grid;
    gap: 20px;
+    padding: 20px;
 }
 
 
