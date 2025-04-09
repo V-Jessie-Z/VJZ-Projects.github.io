@@ -148,12 +148,20 @@ p {
   background: rgba(0, 0, 0, 0.8);
 }
 
+.project-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+}
+
 
 .project-items {
-  display:grid;
-   gap: 20px;
-    padding: 20px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+  padding: 20px;
 }
+
 
 
 .project-item {
