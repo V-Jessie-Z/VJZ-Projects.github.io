@@ -282,3 +282,29 @@ footer .socials a {
 footer .socials a:hover {
   color: #072711;
 }
+.scroll-btn {
+  background-color: rgba(0, 0, 0, 0.6);
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  font-size: 2em;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+  z-index: 10;
+}
+
+.scroll-btn:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+  transform: scale(1.1);
+}
+
+.scroll-btn.left {
+  left: 10px;
+}
+
+.scroll-btn.right {
+  right: 10px;
+}
