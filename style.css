@@ -153,20 +153,14 @@ p {
   transform: scale(1.05);
   background: rgba(0, 0, 0, 0.8);
 }
-
-.project-slider {
+.project-container {
   display: flex;
-  overflow-x: auto;
-  scrollbar-width: none;
-  -ms-overflow-style: none;
+  
   padding: 20px;
-  white-space: nowrap;
+ 
 }
 
 
-.project-slider::-webkit-scrollbar {
-  display: none;
-}
 
 .project-item {
   min-width: 300px;
