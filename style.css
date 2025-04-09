@@ -160,7 +160,9 @@ p {
   scrollbar-width: none;
   -ms-overflow-style: none;
   padding: 20px;
+  white-space: nowrap;
 }
+
 
 .project-slider::-webkit-scrollbar {
   display: none;
@@ -178,6 +180,7 @@ p {
   transition: transform 0.3s ease, background 0.3s ease;
   position: relative;
   display: flex;
+  flex: 0 0 auto; 
   flex-direction: column;
   justify-content: space-between;
 }
