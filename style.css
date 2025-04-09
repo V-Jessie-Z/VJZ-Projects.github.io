@@ -153,15 +153,13 @@ p {
   transform: scale(1.05);
   background: rgba(0, 0, 0, 0.8);
 }
-.project-container {
-display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  gap: 20px;
-  padding: 20px;
- 
-}
 
+.project-slider {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 30px;
+  padding: 20px;
+}
 
 
 .project-item {
@@ -176,7 +174,6 @@ display: flex;
   transition: transform 0.3s ease, background 0.3s ease;
   position: relative;
   display: flex;
-  flex: 0 0 auto; 
   flex-direction: column;
   justify-content: space-between;
 }
