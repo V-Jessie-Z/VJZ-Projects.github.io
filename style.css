@@ -156,9 +156,8 @@ p {
   padding: 20px;
 }
 
-.project-items{
-
-  display :grid;
+.project-items {
+  display:grid;
    gap: 20px;
 }
 
