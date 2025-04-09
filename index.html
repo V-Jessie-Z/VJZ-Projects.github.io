@@ -42,10 +42,14 @@
         </div>
     </section>
 
-    <section id="projects" class="parallax" style="background-color: rgba(0, 0, 0, 0.6);">
-        <div class="container">
-            <h2>Projects</h2>
-            <div class="project-slider">
+<section id="projects" class="parallax" style="background-color: rgba(0, 0, 0, 0.6);">
+    <div class="container">
+        <h2>Projects</h2>
+        <div class="project-slider">
+          
+            <button class="scroll-btn left" onclick="scrollProjects('left')">←</button>
+
+            <div class="project-items">
                 <div class="project-item">
                     <i class="fas fa-code icon"></i>
                     <h3>Project 1</h3>
@@ -58,7 +62,7 @@
                     <i class="fas fa-desktop icon"></i>
                     <h3>Project 2</h3>
                     <h5>Art Gallery</h5>
-                    <p>This application, developed using just Angular, gives the user a digital experience of art. It is designed to replicate an art gallery or museum, so viewers can experience art from the comfort of their own home. </p>
+                    <p>This application, developed using just Angular, gives the user a digital experience of art. It is designed to replicate an art gallery or museum, so viewers can experience art from the comfort of their own home.</p>
                     <a href="https://v-jessie-z.github.io/Digital-Art-Gallery/home" target="_blank" class="button">View Project</a>
                 </div>
                 <div class="project-item">
@@ -68,17 +72,20 @@
                     <p>This is a full-stack School Management System application built with React, .NET Core, and PostgreSQL. It is designed to digitize operations for a traditionally paper-based school.</p>
                     <a href="https://tsala-web-app.onrender.com" target="_blank" class="button">View Project</a>
                 </div>
-                 <div class="project-item">
+                <div class="project-item">
                     <i class="fas fa-book icon"></i>
                     <h3>Project 4</h3>
                     <h5>K9 Management Site</h5>
                     <p>A full-stack web app built with Angular, .NET Core, and SQL Server for my capstone project. It digitizes the management of K9 units, tracking dog training, incidents, feeding, and general info for trainers, handlers, and managers.</p>
                     <a href="https://u22757733.wixsite.com/vision-vanguard-1" target="_blank" class="button">View Website</a>
                 </div>
-                
-  
             </div>
+
+            <button class="scroll-btn right" onclick="scrollProjects('right')">→</button>
         </div>
+    </div>
+</section>
+
     </section>
 
     <section id="experience" class="parallax" style="background-image: url('assets/freepik-export-20240622082818w9RD.png');">
