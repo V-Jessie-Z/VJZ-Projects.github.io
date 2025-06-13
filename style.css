@@ -261,11 +261,16 @@ footer {
 .expertise-container {
   width: 80%;
   margin: auto;
-  
+}
+
+.expertise-container img {
+  width: 20px;
+  height: 20px;
+ 
 }
 
 .coding-circle{
- 
+  
 }
 
 .coding-circle :hover{
