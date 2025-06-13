@@ -57,6 +57,60 @@ header nav ul li a:hover {
   border-radius: 5px;
 }
 
+.picture-slider {
+  position: relative;
+  width: 100%;
+  max-width: 100%;
+  margin-bottom: 20px;
+}
+
+.slider-container {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.slider-image {
+  display: none;
+  max-width: 100%;
+  border-radius: 10px;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.slider-image.active {
+  display: block;
+}
+
+.prev, .next {
+  background-color: rgba(0, 0, 0, 0.6);
+  border: none;
+  color: white;
+  font-size: 24px;
+  padding: 10px 16px;
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 2;
+  border-radius: 50%;
+  user-select: none;
+}
+
+.prev:hover, .next:hover {
+  background-color: rgba(0, 0, 0, 0.9);
+}
+
+.prev {
+  left: 10px;
+}
+
+.next {
+  right: 10px;
+}
+
+
 .parallax {
   background-attachment: fixed;
   background-size: cover;
@@ -123,6 +177,30 @@ p {
   font-weight: 300;
 }
 
+
+.about-content {
+  display: flex;
+  align-items: flex-start;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+
+.my-picture {
+  width: 250px;
+  height: auto;
+  border-radius: 15px;
+  object-fit: cover;
+
+}
+
+.about-paragraph {
+  flex: 1;
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+
+
 .experience-item, .project-item {
   margin-bottom: 30px;
   background: rgba(0, 0, 0, 0.6);
@@ -153,6 +231,46 @@ p {
   transform: scale(1.05);
   background: rgba(0, 0, 0, 0.8);
 }
+
+.quote-container {
+  background-color: #1e1e1e;
+  color: #d4d4d4;
+  padding: 20px;
+  border-radius: 10px;
+  font-family: 'Courier New', Courier, monospace;
+  margin-top: 20px;
+  overflow-x: auto;
+}
+
+.quote-snippet {
+  margin: 0;
+  white-space: pre-wrap;
+}
+
+.comment {
+  color: #6a9955;
+}
+
+.keyword {
+  color: #569cd6;
+}
+
+.variable {
+  color: #9cdcfe;
+}
+
+.operator {
+  color: #d4d4d4;
+}
+
+.string {
+  color: #ce9178;
+}
+
+.semicolon {
+  color: #d4d4d4;
+}
+
 
 .project-slider {
   display: flex;
@@ -200,7 +318,6 @@ p {
   color: white;
   opacity: 0.6;
 }
-
 
 
 button {
@@ -251,6 +368,67 @@ button:hover {
   color: #066725c8;
 }
 
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  background: rgba(0, 0, 0, 0.6);
+  padding: 30px;
+  border-radius: 15px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+  width: 100%;
+  max-width: 600px;
+  margin: 30px auto;
+  color: white;
+}
+
+.contact-form .form-group {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+}
+
+.contact-form label {
+  margin-bottom: 5px;
+  font-weight: 500;
+  font-size: 1rem;
+}
+
+.contact-form input,
+.contact-form textarea {
+  padding: 12px;
+  border-radius: 10px;
+  border: none;
+  font-size: 1rem;
+  background-color: #f0f0f0;
+  color: #333;
+  font-family: 'Montserrat', sans-serif;
+  resize: vertical;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+  outline: 2px solid #32563d;
+  background-color: #ffffff;
+}
+
+.contact-form button {
+  background: #072711;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  padding: 12px 20px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background 0.3s ease;
+  align-self: flex-start;
+}
+
+.contact-form button:hover {
+  background: #0a3418;
+}
+
+
 footer {
   background: #333;
   color: white;
@@ -259,25 +437,11 @@ footer {
 }
 
 .expertise-container {
-  width: 80%;
-  margin: auto;
+  overflow: hidden;
+  width: 100%;
+  height: 300px;
+  position: relative;
 }
-
-.expertise-container img {
-  width: 20px;
-  height: 20px;
- 
-}
-
-.coding-circle{
-  
-}
-
-.coding-circle :hover{
-  transition: color 0.3s ease;
-  
-}
-
 
 footer .socials a {
   color: white;
@@ -290,3 +454,46 @@ footer .socials a {
 footer .socials a:hover {
   color: #072711;
 }
+
+.coding-container {
+  display: flex;
+  gap: 30px;
+  animation: scroll 30s linear infinite;
+  width: max-content;
+}
+
+
+.coding-circle {
+  background-color: rgba(105, 105, 105, 0.624);
+  border-radius: 20px;
+  width: 150px;
+  height: 110px;
+  padding-top: 25px;
+  padding-bottom: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  
+}
+
+.coding-circle img {
+  width: 40px;
+  height: 40px;
+}
+
+.coding-circle:hover {
+  opacity: 0.8;
+  transition: opacity 0.3s ease;
+}
+
+@keyframes scroll {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+

@@ -30,18 +30,34 @@
             <h2>Welcome to My Portfolio</h2>
             <p>Efficiency and Determination for a Brighter Future</p>
             <button onclick="scrollToSection('about')">Learn More</button>
+            <br>
         </div>
     </section>
 
     <section id="about" class="parallax" style="background-image: url(assets/freepik-export-20240622193445doYF.jpeg)">
         <div class="container">
+         <div class="about-container">
             <h2>About Me</h2>
+            <br>
+            <img class="my-picture" src="./assets/1729156621242 copy.jpeg" alt="My picture">
+            <div class="about-paragraph">
+            <br>
+            <br>
             <p>I am a passionate developer with a love for creating elegant and efficient solutions to complex problems. I am currently pursuing a Bachelor of Commerce in Informatics at the University of Pretoria.</p>
             <p>I believe that efficiency and determination go a long way. I try to incorporate those concepts in whatever I do and ensure that I use my skills and knowledge to the best of my ability. I am also willing to learn new things and adapt to diverse environments and situations. This enables me to handle future occurrences better and produce more desirable outcomes.</p>
             <br>
             <p>This portfolio showcases a diverse array of projects that I have undertaken to sharpen my skills and expand my knowledge in various domains. Each project reflects my commitment to continuous learning and through these projects, I have explored different technologies, tools, and methodologies demonstrating my versatility and creatvity as a developer.</p>
-  
-        </div>
+            </div>
+         </div>
+         <br>
+        <div class="quote-container">
+         <pre class="quote-snippet">
+         <span class="comment">// Quote of the Day</span>
+         <span class="keyword">const</span> <span class="variable">quote</span> <span class="operator">=</span> <span class="string">"I'm not afraid of storms, for I'm learning how to sail my ship."</span><span class="semicolon">;</span>
+         <span class="keyword">const</span> <span class="variable">author</span> <span class="operator">=</span> <span class="string">"Louisa May Alcott"</span><span class="semicolon">;</span>
+         </pre>
+       </div>
+    </div>
     </section>
 
     <section id="projects" class="parallax" style="background-color: rgba(0, 0, 0, 0.6);">
@@ -52,6 +68,15 @@
                     <i class="fas fa-code icon"></i>
                     <h3>Project 1</h3>
                     <br>
+                    <div class="picture-slider">
+                    <div class="slider-container">
+                    <button class="prev" onclick="changeSlide(this, -1)">&#10094;</button>
+                    <img src="./assets//Screenshot 2025-06-13 at 21.30.21.png" class="slider-image active">
+                    <img src="https://t4.ftcdn.net/jpg/06/57/37/01/240_F_657370150_pdNeG5pjI976ZasVbKN9VqH1rfoykdYU.jpg" class="slider-image ">
+                    <img src="https://t4.ftcdn.net/jpg/06/71/92/37/240_F_671923740_x0zOL3OIuUAnSF6sr7PuznCI5bQFKhI0.jpg" class="slider-image ">
+                    <button class="next" onclick="changeSlide(this, 1)">&#10095;</button>
+                    </div>
+                    </div>
                     <h5>Ordering App</h5>
                     <p>This application, developed using Ionic and Angular, facilitates the user in placing new orders as well as reordering previous ones. It is designed to streamline the ordering process and enhance user convenience.</p>
                     <a href="https://v-jessie-z.github.io/Food-Ordering-App/tabs/home" target="_blank" class="button">View Project</a>
@@ -60,6 +85,15 @@
                     <i class="fas fa-desktop icon"></i>
                     <h3>Project 2</h3>
                     <br>
+                      <div class="picture-slider">
+                    <div class="slider-container">
+                    <button class="prev" onclick="changeSlide(this, -1)">&#10094;</button>
+                    <img src="./assets/Screenshot 2025-06-13 at 21.30.48.png" class="slider-image active">
+                    <img src="https://t4.ftcdn.net/jpg/06/57/37/01/240_F_657370150_pdNeG5pjI976ZasVbKN9VqH1rfoykdYU.jpg" class="slider-image ">
+                    <img src="https://t4.ftcdn.net/jpg/06/71/92/37/240_F_671923740_x0zOL3OIuUAnSF6sr7PuznCI5bQFKhI0.jpg" class="slider-image ">
+                    <button class="next" onclick="changeSlide(this, 1)">&#10095;</button>
+                    </div>
+                    </div>
                     <h5>Art Gallery</h5>
                     <p>This application, developed using just Angular, gives the user a digital experience of art. It is designed to replicate an art gallery or museum, so viewers can experience art from the comfort of their own home. </p>
                     <a href="https://v-jessie-z.github.io/Digital-Art-Gallery/home" target="_blank" class="button">View Project</a>
@@ -68,14 +102,33 @@
                     <i class="fas fa-book icon"></i>
                     <h3>Project 3</h3>
                     <br>
+                      <div class="picture-slider">
+                    <div class="slider-container">
+                    <button class="prev" onclick="changeSlide(this, -1)">&#10094;</button>
+                    <img src="./assets/Screenshot 2025-06-13 at 21.31.17.png" class="slider-image active">
+                    <img src="https://t4.ftcdn.net/jpg/06/57/37/01/240_F_657370150_pdNeG5pjI976ZasVbKN9VqH1rfoykdYU.jpg" class="slider-image ">
+                    <img src="https://t4.ftcdn.net/jpg/06/71/92/37/240_F_671923740_x0zOL3OIuUAnSF6sr7PuznCI5bQFKhI0.jpg" class="slider-image ">
+                    <button class="next" onclick="changeSlide(this, 1)">&#10095;</button>
+                    </div>
+                    </div>
                     <h5>School Web App</h5>
                     <p>This is a full-stack School Management System application built with React, .NET Core, and PostgreSQL. It is designed to digitize operations for a traditionally paper-based school.</p>
+                    <br>
                     <a href="https://tsala-frontend.onrender.com/home" target="_blank" class="button">View Project</a>
                 </div>
                  <div class="project-item">
                     <i class="fas fa-book icon"></i>
                     <h3>Project 4</h3>
                      <br>
+                       <div class="picture-slider">
+                    <div class="slider-container">
+                    <button class="prev" onclick="changeSlide(this, -1)">&#10094;</button>
+                    <img src="./assets/WhatsApp Image 2024-08-11 at 17.46.59.jpeg" class="slider-image active">
+                    <img src="https://t4.ftcdn.net/jpg/06/57/37/01/240_F_657370150_pdNeG5pjI976ZasVbKN9VqH1rfoykdYU.jpg" class="slider-image ">
+                    <img src="https://t4.ftcdn.net/jpg/06/71/92/37/240_F_671923740_x0zOL3OIuUAnSF6sr7PuznCI5bQFKhI0.jpg" class="slider-image ">
+                    <button class="next" onclick="changeSlide(this, 1)">&#10095;</button>
+                    </div>
+                    </div>
                     <h5>K9 Management Site</h5>
                      <br>
                     <p>A full-stack web app built with Angular, .NET Core, and SQL Server for my capstone project. It digitizes the management of K9 units, tracking dog training, incidents, feeding, and general info for trainers, handlers, and managers.</p>
@@ -91,39 +144,135 @@
     <section id="experience" class="parallax" style="background-image: url('assets/freepik-export-20240622082818w9RD.png');">
         <div class="expertise-container">
           <h2>My Expertise</h2>
-            <h3>Frameworks</h3>
+          <br>
+          <p>
+            These are the frameworks and languages I am familiar with.
+          </p>
+          <br>
+          <div class="coding-container">
+             <div class="coding-circle" >
+                <img src= "https://icon.icepanel.io/Technology/svg/React.svg" >
+                <p>React</p>
+            </div>
+             <div class="coding-circle" >
+                <img src= "https://icon.icepanel.io/Technology/svg/Tailwind-CSS.svg" >
+                <p>Tailwind CSS</p>
+            </div>
+            <div class="coding-circle" >
+                <img src= "https://icon.icepanel.io/Technology/svg/Angular.svg">
+                <p>Angular</p>          
+            </div>
+              <div class="coding-circle" >
+                <img src= "https://icon.icepanel.io/Technology/svg/.NET-core.svg">
+                <p>ASP.NET Core</p>          
+            </div>
+               <div class="coding-circle" >
+                <img src= "https://icon.icepanel.io/Technology/svg/Ionic.svg">
+                <p>Ionic</p>               
+          </div>
+            <div class="coding-circle" >
+                <img src= "https://icon.icepanel.io/Technology/svg/HTML5.svg" >
+                <p>HTML</p>
+            </div>
+            <div class="coding-circle" >
+                <img src= "https://icon.icepanel.io/Technology/svg/CSS3.svg">
+                <p>CSS</p>  
+            </div>
+            <div class="coding-circle" >
+                <img src= "https://icon.icepanel.io/Technology/svg/JavaScript.svg">
+                <p>Javascript</p>
+            </div>
+            <div class="coding-circle" >
+                <img src= "https://icon.icepanel.io/Technology/svg/TypeScript.svg">
+                <p>Typescript</p>
+            </div>
+            <div class="coding-circle" >
+                <img src= "https://icon.icepanel.io/Technology/svg/R-.svg">
+                <p>R</p>
+             </div>
+             <div class="coding-circle" >
+                <img src= "https://cdn-icons-png.freepik.com/256/4492/4492311.png?ga=GA1.1.1233067994.1749820721&semt=ais_hybrid">
+                <p>SQL</p>
+            </div>
+            <div class="coding-circle" >
+                <img src= "https://icon.icepanel.io/Technology/svg/C%23-%28CSharp%29.svg">
+                <p>C#</p>
+            </div>
             <div class="coding-circle" >
                 <img src= "https://icon.icepanel.io/Technology/svg/React.svg" >
                 <p>React</p>
             </div>
+             <div class="coding-circle" >
+                <img src= "https://icon.icepanel.io/Technology/svg/Tailwind-CSS.svg" >
+                <p>Tailwind CSS</p>
+            </div>
             <div class="coding-circle" >
                 <img src= "https://icon.icepanel.io/Technology/svg/Angular.svg">
-                <p>Angular</p>
-                
+                <p>Angular</p>          
+            </div>
+              <div class="coding-circle" >
+                <img src= "https://icon.icepanel.io/Technology/svg/.NET-core.svg">
+                <p>ASP.NET Core</p>          
             </div>
                <div class="coding-circle" >
                 <img src= "https://icon.icepanel.io/Technology/svg/Ionic.svg">
-                <p>Ionic</p>
-                
+                <p>Ionic</p>               
+          </div>
+            <div class="coding-circle" >
+                <img src= "https://icon.icepanel.io/Technology/svg/HTML5.svg" >
+                <p>HTML</p>
             </div>
+            <div class="coding-circle" >
+                <img src= "https://icon.icepanel.io/Technology/svg/CSS3.svg">
+                <p>CSS</p>  
+            </div>
+            <div class="coding-circle" >
+                <img src= "https://icon.icepanel.io/Technology/svg/JavaScript.svg">
+                <p>Javascript</p>
+            </div>
+            <div class="coding-circle" >
+                <img src= "https://icon.icepanel.io/Technology/svg/TypeScript.svg">
+                <p>Typescript</p>
+            </div>
+            <div class="coding-circle" >
+                <img src= "https://icon.icepanel.io/Technology/svg/R-.svg">
+                <p>R</p>
+             </div>
+             <div class="coding-circle" >
+                <img src= "https://cdn-icons-png.freepik.com/256/4492/4492311.png?ga=GA1.1.1233067994.1749820721&semt=ais_hybrid">
+                <p>SQL</p>
+            </div>
+            <div class="coding-circle" >
+                <img src= "https://icon.icepanel.io/Technology/svg/C%23-%28CSharp%29.svg">
+                <p>C#</p>
+            </div>
+          </div>
+          
         </div>
     </section>
 
     <section id="contact" class="parallax contact-section" style="background-color: rgba(0, 0, 0, 0.6);">
         <div class="container">
-            <h2>Contact</h2>
-            <div class="contact-info">
-             
-                <div class="contact-item">
-                    <i class="fas fa-envelope"></i>
-                    <p>Email: <a href="mailto:vjzimondi@hotmail.com">vjzimondi@hotmail.com</a></p>
-                </div>
-                <div class="contact-item">
-                    <i class="fab fa-linkedin icon"></i>
-                    <p>LinkedIn: <a href="https://www.linkedin.com/in/varaidzo-jessica-zimondi-226666237" target="_blank">linkedin.com/in/varaidzo-jessica-zimondi-226666237</a></p>
-                </div>
-               
+            <h2>Contact Me</h2>
+            <br>
+            <p>Have a question, idea, or just want to connect? Use the form below to share your thoughts or requests. I’ll make sure to get back to you as soon as I can.</p>
+            
+            <form action="https://formspree.io/f/xovwdooj" method="POST" class="contact-form">
+             <div class="form-group">
+             <label for="name">Name:</label>
+              <input type="text" name="name" id="name" required />
             </div>
+             <div class="form-group">
+             <label for="email">Email:</label>
+           <input type="email" name="_replyto" id="email" required />
+           </div>
+           <div class="form-group">
+            <label for="message">Message:</label>
+          <textarea name="message" id="message" rows="5" required></textarea>
+         </div>
+          <button type="submit"  onclick="location.reload();">Send Message</button>
+          </form>
+
         </div>
     </section>
 
@@ -132,7 +281,7 @@
             <p>&copy; 2024 Varaidzo Jessica Zimondi</p>
             <div class="socials">
                 <a href="https://www.linkedin.com/in/varaidzo-jessica-zimondi-226666237" target="_blank"><i class="fab fa-linkedin"></i></a>
-                <a href="https://github.com/Varaidzo-Jessica-Zimondi" target="_blank"><i class="fab fa-github"></i></a>
+                <a href="https://github.com/V-Jessie-Z" target="_blank"><i class="fab fa-github"></i></a>
 
             </div>
             
