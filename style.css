@@ -258,6 +258,16 @@ footer {
   text-align: center;
 }
 
+.coding-circle{
+ 
+}
+
+.coding-circle :hover{
+  transition: color 0.3s ease;
+  
+}
+
+
 footer .socials a {
   color: white;
   margin: 0 10px;
