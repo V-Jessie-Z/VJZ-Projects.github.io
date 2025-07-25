@@ -11,70 +11,52 @@ body {
   line-height: 1.6;
 }
 
-/* Make header container flexible and wrap on small screens */
+header {
+  background: #061c03;
+  color: white;
+  padding: 20px 0;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 1000;
+}
+
+
+
 header .container {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  flex-wrap: wrap;
   width: 80%;
   margin: auto;
 }
 
-/* Navbar list default flex (desktop) */
+header h1 {
+  font-size: 1.8em;
+  font-weight: 300;
+}
+
 header nav ul {
   display: flex;
   list-style: none;
-  gap: 1.5rem; 
-  margin: 0;
-  padding: 0;
 }
 
-/* Navbar links style */
+header nav ul li {
+  margin: 0 10px;
+}
+
 header nav ul li a {
   color: white;
   text-decoration: none;
   padding: 5px 10px;
-  font-weight: 200;
-  display: inline-block;
   transition: background 0.3s ease;
+  font-weight: 200;
 }
 
 header nav ul li a:hover {
   background: rgba(255, 255, 255, 0.3);
   border-radius: 5px;
-}
-
-/* RESPONSIVE NAVIGATION */
-@media (max-width: 768px) {
-  header .container {
-    flex-direction: column;
-    align-items: center;
-  }
-
-  header nav ul {
-    flex-direction: column;
-    width: 100%;
-    gap: 1rem;
-    margin-top: 1rem;
-    align-items: center;
-  }
-
-  header nav ul li {
-    margin: 0;
-  }
-
-  header nav ul li a {
-    padding: 10px 20px;
-    font-size: 1.1rem;
-  }
-}
-
-/* Project cards already handled by this media query */
-@media (max-width: 768px) {
-  .card {
-    width: 100%;
-  }
 }
 
 
@@ -477,7 +459,7 @@ footer {
 .expertise-container {
   overflow: hidden;
   width: 100%;
-  height: 300px;
+  height: 400px;
   position: relative;
 }
 
@@ -546,18 +528,20 @@ footer .socials a:hover {
 .card-deck {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
+  justify-content: center;
   gap: 2rem;
 }
 
 /* Card base styling */
 .card {
-  width: 48%;
+  flex: 1 1 600px;
+  max-width: 800px;
   background: #1a1a1a;
   border-radius: 12px;
   overflow: hidden;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
   position: relative;
+  height: 400px;
 }
 
 .card:hover {
@@ -575,7 +559,7 @@ footer .socials a:hover {
 
 .card-img-top {
   width: 100%;
-  height: 300px;
+  height: 400px;
   object-fit: cover;
   transition: filter 0.5s ease, transform 0.5s ease;
 }
@@ -640,9 +624,58 @@ footer .socials a:hover {
   font-weight: 600;
 }
 
-/* Responsive design */
+/* NAVBAR & CARDS RESPONSIVE BEHAVIOR */
+
+/* For tablets and smaller */
+@media (max-width: 1024px) {
+  header .container {
+    width: 90%;
+  }
+
+  header nav ul li {
+    margin: 0 8px;
+  }
+
+
+}
+
+/* For mobile screens */
 @media (max-width: 768px) {
-  .card {
+  /* NAVBAR */
+  header .container {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 10px;
+  }
+
+  header h1 {
+    margin-bottom: 10px;
+    font-size: 1.5em;
+  }
+
+  header nav ul {
+    flex-direction: column;
     width: 100%;
+    padding-left: 0;
+  }
+
+  header nav ul li {
+    margin: 5px 0;
+  }
+
+  header nav ul li a {
+    display: block;
+    padding: 8px 12px;
+  }
+
+  /* CARDS */
+  .card-deck {
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+
+  .card {
+    flex: 1 1 100%;
+    max-width: 100%; /* full width on mobile */
   }
 }
