@@ -12,6 +12,12 @@ function scrollToSection(sectionId) {
       const images = slider.querySelectorAll('.slider-image');
       const prevBtn = slider.querySelector('.prev');
       const nextBtn = slider.querySelector('.next');
+      const navToggle = document.querySelector('.nav-toggle');
+      const navMenu = document.querySelector('header nav ul');
+
+       navToggle.addEventListener('click', () => {
+       navMenu.classList.toggle('show');
+     });
 
       function showSlide(index) {
         images.forEach(img => img.classList.remove('active'));
