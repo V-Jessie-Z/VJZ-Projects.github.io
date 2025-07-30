@@ -151,7 +151,7 @@ header nav ul li a:hover {
 }
 
 .hero-content h2 {
-  font-size: 3em;
+  font-size: 2.5em;
   font-weight: 300;
   margin-bottom: 20px;
 }
@@ -550,7 +550,7 @@ footer .socials a:hover {
   }
 }
 
-/* PROJECT SECTION STYLING */
+
 
 .modern-projects {
   padding: 4rem 0;
@@ -566,7 +566,7 @@ footer .socials a:hover {
   gap: 2rem;
 }
 
-/* Card base styling */
+
 .card {
   flex: 1 1 400px;
  
@@ -649,7 +649,7 @@ footer .socials a:hover {
   background-color: #e73370;
 }
 
-/* Project title under each card */
+
 .project-title {
   font-size: 1.2rem;
   margin-top: 1rem;
@@ -658,7 +658,7 @@ footer .socials a:hover {
   font-weight: 600;
 }
 
-/* NAVBAR & CARDS RESPONSIVE BEHAVIOR */
+
 
 /* For tablets and smaller */
 @media (max-width: 1024px) {
@@ -675,19 +675,17 @@ footer .socials a:hover {
 
 /* For mobile screens */
 @media (max-width: 768px) {
-  /* NAVBAR */
-  /* Show hamburger */
+
   .nav-toggle {
     display: block;
   }
 
-  /* Stack the container elements */
+
   header .container {
     flex-direction: column;
     align-items: flex-start;
   }
 
-  /* Hide menu by default */
   header nav ul {
     display: none;
     flex-direction: column;
@@ -698,7 +696,7 @@ footer .socials a:hover {
     border-top: 1px solid rgba(255, 255, 255, 0.2);
   }
 
-  /* Show menu when toggled */
+
   header nav ul.show {
     display: flex;
   }
@@ -714,7 +712,7 @@ footer .socials a:hover {
   }
 
 
-  /* CARDS */
+
   .card-deck {
     flex-direction: column;
     gap: 1.5rem;
@@ -722,6 +720,24 @@ footer .socials a:hover {
 
   .card {
     flex: 1 1 100%;
-    max-width: 100%; /* full width on mobile */
+    max-width: 100%;
   }
+}
+
+.tech-stack {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-bottom: 1rem;
+  justify-content: center;
+}
+
+
+.tech-stack span {
+  background: #5a5859cf; 
+  color: white;
+  font-size: 0.75rem;
+  padding: 4px 8px;
+  border-radius: 6px;
+  font-weight: 500;
 }
