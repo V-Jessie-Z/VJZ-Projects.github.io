@@ -658,6 +658,10 @@ footer .socials a:hover {
   font-weight: 600;
 }
 
+a.button {
+  text-decoration: none;
+}
+
 
 
 /* For tablets and smaller */
@@ -710,8 +714,16 @@ footer .socials a:hover {
     display: block;
     padding: 10px 20px;
   }
+  
+  .hero-content h2{
 
+    font-size:2rem;
+  }
 
+  .hero-content p{
+
+    font-size:1rem;
+  }
 
   .card-deck {
     flex-direction: column;
